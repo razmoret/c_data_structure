@@ -1,0 +1,12 @@
+install: make get-deps
+
+language: c
+sudo: false
+
+compiler:
+  - clang
+  - gcc
+  
+script: 
+  - scons
+  - make
