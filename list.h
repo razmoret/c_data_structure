@@ -5,7 +5,7 @@
 
 typedef struct node{
     void *data;
-    struct Node *next;
+    struct node *next;
 }node;
 
 typedef struct list{
@@ -26,6 +26,7 @@ int list_size(list *list);
 void list_head(list *list, void *element);
 void list_tail(list *list, void *element);
 
-void list_pop(list *list, void *element);
+void list_pop_head(list *list, void *element);
+void list_pop_tail(list *list, void *element);
 
 #endif
